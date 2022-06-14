@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Detailed information</h1>
+  <ul>
+    <li><strong>SERVICES AVAILABLE ON </strong> {{ num_car_models_count }}<strong>  MODELS:</strong></li>
+    <li><strong>SERVICES TYPES:</strong> {{ num_service_count }} </li>
+    <li><strong>REGISTERED USERS:</strong> {{ num_registered_status }}</li>
+    <li><strong>VEHICLES TO INSPECT:</strong> {{ num_awaiting_status }}</li>
+    <li><strong>VEHICLES THAT ARE BEING FIXED:</strong> {{ num_repairing_status }}</li>
+    <li><strong>COMPLETED ORDERS:</strong> {{ num_fixed_status }}</li>
+  </ul>
+  <p>Your were on this page {{ num_visits }} times.</p>
+{% endblock %}

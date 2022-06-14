@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container carmodel">
+    <h4>{{ car_model.make }} {{ car_model.model }}</h4>
+    <hr/>
+        <h5>About this model:</h5>
+        <p>{{ car_model.description }}</p>
+        <img src="{{ car_model.photo_link}}"
+        width="750"
+        height="400">
+    </hr>
+    </div>
+{% endblock %}
